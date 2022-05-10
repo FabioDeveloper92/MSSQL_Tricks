@@ -1,1 +1,1 @@
-# MSSQL_Tricks
+# MSSQL Tricks
