@@ -1,0 +1,12 @@
+USE myDB;  
+GO
+
+SELECT name AS object_name   
+  ,SCHEMA_NAME(schema_id) AS schema_name  
+  ,type_desc  
+  ,create_date  
+  ,modify_date  
+FROM sys.objects  
+WHERE modify_date > '2022-05-01'
+ORDER BY modify_date;  
+GO
